@@ -1,0 +1,58 @@
+$gray-bg : #505050;
+$dark-gray-bg : #323232;
+$green-button-color: #00b050;
+$green-hover-color: #50f080;
+$white-button-color: #ffffff;
+
+.left-panel {
+  height: 100%;
+  background-color: $gray-bg;
+
+  .left-header {
+    width: 100%;
+    height: 150px;
+    text-align: center;
+    background-color: $dark-gray-bg;
+    color: white;
+  }
+
+  .panel, .panel-heading, .panel-body {
+    box-shadow: none;
+    padding: 0 0 0 5px;
+    margin: 0;
+    border: none !important;
+    background: none;
+  }
+
+  .panel-title {
+    color: white;
+    cursor: pointer;
+  }
+
+  .panel-group {
+    margin-top: 20px;
+  }
+
+  .panel a {
+    width: 100%;
+    display: block;
+    background: url('./../images/expanded.png') no-repeat 95% 50%;
+    &.collapsed {
+      background: url('./../images/collapsed.png') no-repeat 94% 50%;
+    }
+  }
+  button.page-link {
+    display: block;
+    background: none;
+    border: none;
+    color: $white-button-color;
+    outline: none;
+    text-align: left;
+    &:hover {
+      color: $green-hover-color;
+    }
+    &.selected-page {
+      color: $green-button-color;
+    }
+  }
+}
