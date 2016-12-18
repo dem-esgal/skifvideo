@@ -1,0 +1,39 @@
+# Spring Boot configuration
+spring:
+  profiles:
+    active: development
+
+logging:
+  pattern:
+    console: "%d %-5level %logger : %msg%n"
+  level:
+    org.springframework: INFO
+    org.hibernate: DEBUG
+
+# Server configuration
+server:
+  port: 8085
+  sessionTimeout: 30
+
+#PackagesToScan
+entityManager:
+  packagesToScan: org.skifvideo
+
+# Database
+database:
+  driver: org.postgresql.Driver
+  url: jdbc:postgresql://localhost:5432
+  username: 12345
+  password: 12345
+  instance:
+
+# Hibernate
+hibernate:
+  dialect: org.hibernate.dialect.PostgreSQLDialect
+  hbm2ddl.auto:
+  show_sql: true
+  format_sql: true
+  # Disable Security
+management.security.enabled: false
+management.health.db.enabled: false
+security.basic.enabled: false

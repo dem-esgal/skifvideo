@@ -1,0 +1,48 @@
+{
+  "name": "SKIF-Video",
+  "version": "1.0.0",
+  "description": "SKIF-Video",
+  "scripts": {
+    "start": "node server.js",
+    "test": "mocha --recursive --compilers js:babel-core/register --require ./test/setup.js",
+    "test:watch": "npm test -- --watch"
+  },
+  "dependencies": {
+    "bootstrap-sass": "^3.3.7",
+    "classnames": "^2.1.2",
+    "css-loader": "^0.25.0",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "node-sass": "^3.13.0",
+    "react": "^0.14.0",
+    "react-bootstrap": "^0.30.7",
+    "react-dom": "^0.14.0",
+    "react-redux": "^4.0.0",
+    "reactable": "^0.14.1",
+    "redux": "^3.0.0",
+    "redux-logger": "^2.7.4",
+    "redux-thunk": "^2.1.0",
+    "sass-loader": "^4.0.2",
+    "file-loader": "^0.9.0"
+  },
+  "devDependencies": {
+    "babel-core": "^5.6.18",
+    "babel-loader": "^5.1.4",
+    "babel-plugin-react-transform": "^1.1.0",
+    "eslint": "^3.10.2",
+    "eslint-plugin-react": "^6.7.1",
+    "expect": "^1.8.0",
+    "express": "^4.13.3",
+    "jsdom": "^5.6.1",
+    "mocha": "^2.2.5",
+    "node-libs-browser": "^0.5.2",
+    "raw-loader": "^0.5.1",
+    "react-addons-test-utils": "^0.14.0",
+    "react-transform-hmr": "^1.0.0",
+    "style-loader": "^0.12.3",
+    "todomvc-app-css": "^2.0.1",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.9.11",
+    "webpack-dev-middleware": "^1.2.0",
+    "webpack-hot-middleware": "^2.2.0"
+  }
+}
